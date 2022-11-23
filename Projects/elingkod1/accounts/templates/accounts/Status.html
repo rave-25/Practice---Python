@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Status</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/status.css' %}">
+    </head>
+    <body>
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <div class="col-md">
+                    <div class="card text-center text-white  mb-3" id="total-orders">
+                          <div class="card-header">
+                              <h5 class="card-title">Total Job Orders</h5>
+                          </div>
+                          <div class="card-body">
+                            <h3 class="card-title"></h3>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="col-md">
+                    <div class="card text-center text-white  mb-3" id="orders-pending">
+                          <div class="card-header">
+                              <h5 class="card-title">Job Orders Pending</h5>
+                          </div>
+                          <div class="card-body">
+                            <h3 class="card-title"></h3>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="col-md">
+                    <div class="card text-center text-white  mb-3" id="orders-delivered">
+                          <div class="card-header">
+                              <h5 class="card-title">Job Orders Delivered</h5>
+                          </div>
+                          <div class="card-body">
+                            <h3 class="card-title"></h3>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>

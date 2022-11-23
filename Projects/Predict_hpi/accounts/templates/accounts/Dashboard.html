@@ -1,0 +1,43 @@
+{% extends 'accounts/Main.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        {% block content %}
+        <div class="row" style="margin: 0;"> 
+            <div class="col-md-5">
+                <br>
+                <h5>House Price Prediction</h5>
+                <hr>
+                <div class="card card-body">
+                    <a class="btn btn-primary  btn-sm btn-block" href="">Input Year Range (from to)</a>
+                    <br>
+                    <table class="table table-sm">
+                        <tr>
+                            <th>Annualized Return Value</th>
+                            <th>Percent Change</th>
+                            <th>Forecasted Price</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <br>
+                <h5>Trend Charts</h5>
+                <hr>
+                <div class="card card-body">
+                        <h6>Year annualized return for house price</h6>
+                        <p>Insert chart</p>
+                        <h6>Equilibrium relationship between house price and personal income</h6>
+                        <p>Insert chart</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    {% endblock %}
+</html>

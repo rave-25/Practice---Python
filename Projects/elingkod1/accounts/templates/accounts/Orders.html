@@ -1,0 +1,34 @@
+{% extends 'accounts/Main.html'%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Orders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    {% block content %}
+    <br>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="card card-body">
+                <h5>Job Orders</h5>
+            </div>
+            <div class="card card-body">
+                <table class="table">
+                    <tr>
+                        <th>Job Order</th>
+                        <th></th>
+                        <th>Status</th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    {% endblock %}
+    </body>
+</html>
